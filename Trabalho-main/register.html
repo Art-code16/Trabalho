@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte DALG</title>
+    <link rel="stylesheet" href="resgister.css">
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1 class="h1">Cadastro</h1>
+        <form id="register">
+            <label class="label1">Nome:</label>
+            <input class="input1" type="text" id="name-register"><br>
+
+            <label class="label2">E-mail:</label>
+            <input class="input2" type="text" id="email-register"><br>
+            
+            <label class="label3">CPF:</label>
+            <input type="text" class="input3" id="cpf-register">
+
+            <label class="label4">Senha:</label>
+            <input class="input5" type="password" id="password"><br>
+
+            <label class="label5">Confirme sua Senha:</label>
+            <input class="input5" type="password" id="password-confirm"><br>
+        </form>
+    </div>
+    <div class="div2">
+        <button  type="button" id="enviar-banco-registro" onclick="confirm_pass()">Registrar</button>
+    </div>
+    <script src="functions.js"></script>
+</body>
+
+</html>
