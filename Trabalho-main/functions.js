@@ -16,7 +16,7 @@ function confirm_pass() {
         localStorage.setItem("email-register", Email);
 
     } else if(nome == "" || Email == "" || CPF == "" || senha_confirmar == ""){
-                alert("Senhas incorretas!!");
+                alert("Cadastro inválido!!");
     }else {
         alert("Senhas incorretas!!");
     }
@@ -43,19 +43,19 @@ function confirm_login() {
 
     let data_atual_formatada = `${ano}-${mes}-${dia}`;
 
-    if (nome !== nome_register) {
+    if (nome !== nome_register || nome == "") {
         alert("Nome de usuário incorreto!!");
         return;
     }
-    if (Email !== Email_register) {
+    if (Email !== Email_register || Email == "") {
         alert("E-mail incorreto!!");
         return;
     }
-    if (senha_login !== senha) {
+    if (senha_login !== senha || senha_login == "") {
         alert("Senha incorreta!!");
         return;
     }
-    if (CPF !== CPF_register) {
+    if (CPF !== CPF_register || CPF == "") {
         alert("CPF incorreto!!");
         return;
     }
@@ -80,6 +80,6 @@ function page(){
 
         ${info}
 
-        Entre em contato com o nosso suporte através do número no final desta página para
-        doação ser aprovada, a data atual de hoje já foi salva como "provável doação" ao sistema do nosso suporte. :)`);
+        
+        Entre em contato com o nosso suporte através do número no final desta página para doação ser aprovada, a data atual de hoje já foi salva como "provável doação" ao sistema do nosso suporte. :)`);
 }
