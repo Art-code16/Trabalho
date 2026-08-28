@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="container">
+        <form>
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input id="name" placeholder="Usuário" type="text">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input id="email" placeholder="E-mail" type="email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-box">
+                <input id="cpf" placeholder="CPF" type="text">
+                <i class="fa-solid fa-id-card"></i>
+            </div>
+
+            <div class="input-box">
+                <input id="date" type="date">
+                <i class="fa-solid fa-calendar"></i>
+            </div>
+
+            <div class="input-box">
+                <input id="password-login" placeholder="Senha" type="password">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Lembrar senha</label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button type="button" class="login" onclick="confirm_login()">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+            </div>
+        </form>
+    </main>
+    <script src="functions.js"></script>
+</body>
+</html>

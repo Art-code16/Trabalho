@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE Mono", sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.h1-asilo{
+    color:#fff ;
+    text-shadow: -4px 4px #000000 ;
+    margin-top: 20px;
+}
+.titulo2{
+    color: #fff;
+    text-shadow: #000000 -4px 4px;
+}
+body {
+    min-height: 100vh;
+    background: url(img/img3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+    text-align: center;
+}
+
+
+.header {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+}
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+
+.hero-content {
+    width: 90%;
+    max-width: 900px;
+    padding: 60px 50px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 16px 45px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+
+.botao:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+
+
+.card {
+    width: 90%;
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+
+.card p {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.descricao {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 21px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+.texto-doacao {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 21px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+.localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.localizacao .card {
+    overflow: hidden;
+}
+
+
+.localizacao iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.doacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+
+.doacao form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input-box {
+    width: 100%;
+    height: 60px;
+    margin: 30px 0;
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 0 10px;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+footer {
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+footer p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        width: 95%;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+
+    .header nav a {
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .descricao,
+    .texto-doacao {
+        width: 95%;
+        padding: 25px 20px;
+        font-size: 18px;
+    }
+}
+
+
+.input-box {
+    width: 60%;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 0 5px;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
